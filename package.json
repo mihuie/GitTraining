@@ -1,0 +1,29 @@
+{
+  "name": "GitTraining",
+  "homepage": "localhost",
+  "author": {
+    "name": "oanguin",
+    "email": "internalsoftsupport@egovja.com"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-bower-concat": "~0.4.0"
+  },
+  "scripts": {
+    "start_dev": "concurrently \"grunt watch\" \"mvn tomcat7:run\"",
+    "test_server": "mvn tomcat7:run"
+  },
+  "dependencies": {
+    "concurrently": "^3.1.0"
+  }
+}
